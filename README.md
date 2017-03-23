@@ -1,4 +1,4 @@
-# Webpack blocks - TypeScript
+# Webpack blocks - Vue.js
 
 This is the `vue` block providing [Vue.js](vuejs.org) component support. Uses
 [vue-loader](http://vue-loader.vuejs.org/en/).
