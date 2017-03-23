@@ -3,6 +3,11 @@
 This is the `vue` block providing [Vue.js](vuejs.org) component support. Uses
 [vue-loader](http://vue-loader.vuejs.org/en/).
 
+## Status
+
+This package is currently in alpha. It has been provided to you in good faith
+but it is currently almost guaranteed to break.
+
 ## Options
 
 Uses the same options as [advanced vue-loader
