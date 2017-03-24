@@ -1,6 +1,6 @@
 {
   "name": "webpack-blocks-vue",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "VueJS configuration for webpack blocks",
   "main": "index.js",
   "repository": "https://github.com/foxbunny/webpack-blocks-vue.git",
