@@ -23,22 +23,18 @@ function extract(context, loader) {
 function vue(options) {
   const { 
     exclude = /\/node_modules\//,
-    loaders = {},
-    preLoaders = {},
-    postLoaders = {},
-    excludedPreloaders = {},
-    extractCSS = false
+    extractCSS = false,
   } = options || {}
+  const opts = (opts => {
+    Object.keys(options || {})
+      .filter(k => !['exlude', 'extractCSS'].includes(k))
+      .forEach(k => opts[k] = options[k])
+    return opts
+  })({})
 
   const extraOptions = (context) => {
-    const opts = {
-      loaders,
-      preLoaders,
-      postLoaders,
-      excludedPreloaders
-    }
-
     if (extractCSS) {
+      opts.loaders = opts.loaders || {}
       const foundCSS = CSS_EXTS.filter(e => e in opts.loaders)
       if (foundCSS.length) {
         foundCSS.forEach(ext => {

@@ -64,4 +64,11 @@ test('default options', () => {
     })
     expect(blockfn(mockContext(webpackVer))).toMatchSnapshot()
   })
+
+  test(`include arbitrary options on webpack ${webpackVer}`, () => {
+    const blockfn = vue({
+      esModule: true
+    })
+    expect(blockfn(mockContext(webpackVer))).toMatchSnapshot()
+  })
 })

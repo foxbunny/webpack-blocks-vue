@@ -19,12 +19,9 @@ Object {
     ],
   },
   "vue": Object {
-    "excludedPreloaders": Object {},
     "loaders": Object {
       "css": "sass-loader",
     },
-    "postLoaders": Object {},
-    "preLoaders": Object {},
   },
 }
 `;
@@ -39,12 +36,9 @@ Object {
         ],
         "loader": "vue-loader",
         "options": Object {
-          "excludedPreloaders": Object {},
           "loaders": Object {
             "css": "sass-loader",
           },
-          "postLoaders": Object {},
-          "preLoaders": Object {},
         },
         "test": undefined,
       },
@@ -77,7 +71,6 @@ Object {
     ],
   },
   "vue": Object {
-    "excludedPreloaders": Object {},
     "loaders": Object {
       "css": Object {
         "args": Array [
@@ -86,8 +79,6 @@ Object {
         "extractTextPluginMock": true,
       },
     },
-    "postLoaders": Object {},
-    "preLoaders": Object {},
   },
 }
 `;
@@ -102,7 +93,6 @@ Object {
         ],
         "loader": "vue-loader",
         "options": Object {
-          "excludedPreloaders": Object {},
           "loaders": Object {
             "css": Object {
               "args": Array [
@@ -114,8 +104,6 @@ Object {
               "extractTextPluginMock": true,
             },
           },
-          "postLoaders": Object {},
-          "preLoaders": Object {},
         },
         "test": undefined,
       },
@@ -148,7 +136,6 @@ Object {
     ],
   },
   "vue": Object {
-    "excludedPreloaders": Object {},
     "loaders": Object {
       "css": Object {
         "args": Array [
@@ -157,8 +144,6 @@ Object {
         "extractTextPluginMock": true,
       },
     },
-    "postLoaders": Object {},
-    "preLoaders": Object {},
   },
 }
 `;
@@ -173,7 +158,6 @@ Object {
         ],
         "loader": "vue-loader",
         "options": Object {
-          "excludedPreloaders": Object {},
           "loaders": Object {
             "css": Object {
               "args": Array [
@@ -185,8 +169,6 @@ Object {
               "extractTextPluginMock": true,
             },
           },
-          "postLoaders": Object {},
-          "preLoaders": Object {},
         },
         "test": undefined,
       },
@@ -219,7 +201,6 @@ Object {
     ],
   },
   "vue": Object {
-    "excludedPreloaders": Object {},
     "loaders": Object {
       "css": Object {
         "args": Array [
@@ -228,8 +209,6 @@ Object {
         "extractTextPluginMock": true,
       },
     },
-    "postLoaders": Object {},
-    "preLoaders": Object {},
   },
 }
 `;
@@ -244,7 +223,6 @@ Object {
         ],
         "loader": "vue-loader",
         "options": Object {
-          "excludedPreloaders": Object {},
           "loaders": Object {
             "css": Object {
               "args": Array [
@@ -256,8 +234,6 @@ Object {
               "extractTextPluginMock": true,
             },
           },
-          "postLoaders": Object {},
-          "preLoaders": Object {},
         },
         "test": undefined,
       },
@@ -290,7 +266,6 @@ Object {
     ],
   },
   "vue": Object {
-    "excludedPreloaders": Object {},
     "loaders": Object {
       "css": Object {
         "args": Array [
@@ -299,8 +274,6 @@ Object {
         "extractTextPluginMock": true,
       },
     },
-    "postLoaders": Object {},
-    "preLoaders": Object {},
   },
 }
 `;
@@ -315,7 +288,6 @@ Object {
         ],
         "loader": "vue-loader",
         "options": Object {
-          "excludedPreloaders": Object {},
           "loaders": Object {
             "css": Object {
               "args": Array [
@@ -327,8 +299,6 @@ Object {
               "extractTextPluginMock": true,
             },
           },
-          "postLoaders": Object {},
-          "preLoaders": Object {},
         },
         "test": undefined,
       },
@@ -361,12 +331,9 @@ Object {
     ],
   },
   "vue": Object {
-    "excludedPreloaders": Object {},
     "loaders": Object {
       "js": "ts-loader",
     },
-    "postLoaders": Object {},
-    "preLoaders": Object {},
   },
 }
 `;
@@ -381,12 +348,9 @@ Object {
         ],
         "loader": "vue-loader",
         "options": Object {
-          "excludedPreloaders": Object {},
           "loaders": Object {
             "js": "ts-loader",
           },
-          "postLoaders": Object {},
-          "preLoaders": Object {},
         },
         "test": undefined,
       },
@@ -419,7 +383,6 @@ Object {
     ],
   },
   "vue": Object {
-    "excludedPreloaders": Object {},
     "loaders": Object {
       "less": Object {
         "args": Array [
@@ -428,8 +391,6 @@ Object {
         "extractTextPluginMock": true,
       },
     },
-    "postLoaders": Object {},
-    "preLoaders": Object {},
   },
 }
 `;
@@ -444,7 +405,6 @@ Object {
         ],
         "loader": "vue-loader",
         "options": Object {
-          "excludedPreloaders": Object {},
           "loaders": Object {
             "less": Object {
               "args": Array [
@@ -456,8 +416,6 @@ Object {
               "extractTextPluginMock": true,
             },
           },
-          "postLoaders": Object {},
-          "preLoaders": Object {},
         },
         "test": undefined,
       },
@@ -490,7 +448,6 @@ Object {
     ],
   },
   "vue": Object {
-    "excludedPreloaders": Object {},
     "loaders": Object {
       "sass": Object {
         "args": Array [
@@ -499,8 +456,6 @@ Object {
         "extractTextPluginMock": true,
       },
     },
-    "postLoaders": Object {},
-    "preLoaders": Object {},
   },
 }
 `;
@@ -515,7 +470,6 @@ Object {
         ],
         "loader": "vue-loader",
         "options": Object {
-          "excludedPreloaders": Object {},
           "loaders": Object {
             "sass": Object {
               "args": Array [
@@ -527,8 +481,6 @@ Object {
               "extractTextPluginMock": true,
             },
           },
-          "postLoaders": Object {},
-          "preLoaders": Object {},
         },
         "test": undefined,
       },
@@ -561,7 +513,6 @@ Object {
     ],
   },
   "vue": Object {
-    "excludedPreloaders": Object {},
     "loaders": Object {
       "stylus": Object {
         "args": Array [
@@ -570,8 +521,6 @@ Object {
         "extractTextPluginMock": true,
       },
     },
-    "postLoaders": Object {},
-    "preLoaders": Object {},
   },
 }
 `;
@@ -586,7 +535,6 @@ Object {
         ],
         "loader": "vue-loader",
         "options": Object {
-          "excludedPreloaders": Object {},
           "loaders": Object {
             "stylus": Object {
               "args": Array [
@@ -598,8 +546,6 @@ Object {
               "extractTextPluginMock": true,
             },
           },
-          "postLoaders": Object {},
-          "preLoaders": Object {},
         },
         "test": undefined,
       },
@@ -631,12 +577,7 @@ Object {
       ".vue",
     ],
   },
-  "vue": Object {
-    "excludedPreloaders": Object {},
-    "loaders": Object {},
-    "postLoaders": Object {},
-    "preLoaders": Object {},
-  },
+  "vue": Object {},
 }
 `;
 
@@ -649,12 +590,7 @@ Object {
           /\\\\/node_modules\\\\//,
         ],
         "loader": "vue-loader",
-        "options": Object {
-          "excludedPreloaders": Object {},
-          "loaders": Object {},
-          "postLoaders": Object {},
-          "preLoaders": Object {},
-        },
+        "options": Object {},
         "test": undefined,
       },
     ],
@@ -686,7 +622,6 @@ Object {
     ],
   },
   "vue": Object {
-    "excludedPreloaders": Object {},
     "loaders": Object {
       "css": Object {
         "args": Array [
@@ -695,8 +630,6 @@ Object {
         "extractTextPluginMock": true,
       },
     },
-    "postLoaders": Object {},
-    "preLoaders": Object {},
   },
 }
 `;
@@ -711,7 +644,6 @@ Object {
         ],
         "loader": "vue-loader",
         "options": Object {
-          "excludedPreloaders": Object {},
           "loaders": Object {
             "css": Object {
               "args": Array [
@@ -723,8 +655,54 @@ Object {
               "extractTextPluginMock": true,
             },
           },
-          "postLoaders": Object {},
-          "preLoaders": Object {},
+        },
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".vue",
+    ],
+  },
+}
+`;
+
+exports[`include arbitrary options on webpack 1 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "exclude": Array [
+          /\\\\/node_modules\\\\//,
+        ],
+        "loader": "vue-loader",
+        "test": undefined,
+      },
+    ],
+  },
+  "resolve": Object {
+    "extensions": Array [
+      ".vue",
+    ],
+  },
+  "vue": Object {
+    "esModule": true,
+  },
+}
+`;
+
+exports[`include arbitrary options on webpack 2 1`] = `
+Object {
+  "module": Object {
+    "loaders": Array [
+      Object {
+        "exclude": Array [
+          /\\\\/node_modules\\\\//,
+        ],
+        "loader": "vue-loader",
+        "options": Object {
+          "esModule": true,
         },
         "test": undefined,
       },
