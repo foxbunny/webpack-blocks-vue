@@ -3,6 +3,16 @@
 This is the `vue` block providing [Vue.js](vuejs.org) component support. Uses
 [vue-loader](http://vue-loader.vuejs.org/en/).
 
+## Installation
+
+You can install this package using npm:
+
+    npm install --save-dev webpack-blocks-vue
+
+or yarn:
+
+    yarn add --dev webpack-blocks-vue
+
 ## Status
 
 As of version 1.0.0, this package is compatible with webpack-blocks 1.x, and is,
@@ -21,6 +31,9 @@ with the additon of `extractCSS` boolean flag, which is a shortcut for [extracti
 ## Example:
 
 ```javascript
+var {createConfig, ...} = require('webpack-blocks');
+var vue = require('webpack-blocks-vue');
+
 module.exports = createConfig([
   // ...
   vue({
