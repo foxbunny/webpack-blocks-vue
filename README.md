@@ -21,7 +21,7 @@ module.exports = createConfig([
   // ...
   vue({
     loaders: {
-      typescript: 'awesome-typescript-loader',
+      coffee: 'coffee-loader',
       css: 'sass-loader'
     },
     extractCSS: true
