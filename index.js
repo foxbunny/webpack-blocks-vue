@@ -53,20 +53,11 @@ function vue(options) {
     return opts;
   }
 
-  const vueBlock = (context, util) => prevConfig => Object.assign(prevConfig, {
-    resolve: Object.assign(prevConfig.resolve || {}, {
-      extensions: ['.vue'],
-    }),
-    module: Object.assign(prevConfig.module || {}, {
-      rules: (prevConfig.module.rules || []).concat([
-        {
-          test: context.fileType('application/x-vue'),
-          exclude: Array.isArray(exclude) ? exclude : [ exclude ],
-          loader: 'vue-loader',
-          options: extraOptions(),
-        }
-      ]),
-    }),
+  const vueBlock = (context, {addLoader}) => addLoader({
+    test: context.fileType('application/x-vue'),
+    exclude: Array.isArray(exclude) ? exclude : [ exclude ],
+    loader: 'vue-loader',
+    options: extraOptions(),
   });
 
   return Object.assign(vueBlock, {
