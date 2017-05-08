@@ -5,6 +5,10 @@ This is the `vue` block providing [Vue.js](vuejs.org) component support. Uses
 
 ## Status
 
+As of version 1.0.0, this package is compatible with webpack-blocks 1.x, and is,
+therefore, only compatible with webpack 2. If you need to support webpack 1, use
+webpack-blocks <1.0 and webpack-blocks-vue 0.2.0.
+
 This package is currently in alpha. It has been provided to you in good faith
 but it is currently almost guaranteed to break.
 
