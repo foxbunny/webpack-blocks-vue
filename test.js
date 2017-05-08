@@ -1,74 +1,40 @@
-var vue = require('./index')
+var {createConfig} = require('webpack-blocks');
+var vue = require('./index');
 
-const mockContext = (webpackVersion = 1) => {
-  const ctx = {
-    fileType: jest.fn(),
-    webpackVersion: {
-      major: webpackVersion
-    } 
-  }
-  ctx.fileType.all = jest.fn()
-  ctx.fileType.add = jest.fn()
-  return ctx
-}
+const vueCfg = (options) => createConfig([
+  vue(options)
+]);
+
 
 test('default options', () => {
-  expect(typeof vue({})).toBe('function')
-})
+  expect(vueCfg({})).toMatchSnapshot();
+});
 
-;[1, 2].forEach((webpackVer) => {
-  test(`default options on webpack ${webpackVer}`, () => {
-    const blockfn = vue({})
-    expect(blockfn(mockContext(webpackVer))).toMatchSnapshot()
-  })
+test('custom options', () => {
+  expect(vueCfg({
+    loaders: {
+      css: "css-loader",
+    },
+  })).toMatchSnapshot();
+});
 
-  test(`customize js loader on webpack ${webpackVer}`, () => {
-    const blockfn = vue({loaders: {js: 'ts-loader'}})
-    expect(blockfn(mockContext(webpackVer))).toMatchSnapshot()
-  })
+test('extract CSS', () => {
+  expect(vueCfg({
+    extractCSS: true
+  })).toMatchSnapshot();
+});
 
-  test(`customize css loader on webpack ${webpackVer}`, () => {
-    const blockfn = vue({loaders: {css: 'sass-loader'}})
-    expect(blockfn(mockContext(webpackVer))).toMatchSnapshot()
-  })
+['sass', 'stylus', 'less'].forEach(cssLoader => {
+  test(`extract CSS with ${cssLoader}-loader`, () => {
+    expect(vueCfg({
+      loaders: {[cssLoader]: `${cssLoader}-loader`},
+      extractCSS: true,
+    })).toMatchSnapshot();
+  });
+});
 
-  test(`customize css with extract on webpack ${webpackVer}`, () => {
-    const blockfn = vue({
-      loaders: {css: 'css-loader'}, 
-      extractCSS: true
-    })
-    expect(blockfn(mockContext(webpackVer))).toMatchSnapshot()
-  })
-
-  ;['sass', 'less', 'stylus'].forEach((ext) => {
-    test(`customize css using ${ext} with extract on webpack ${webpackVer}`, () => {
-      const blockfn = vue({
-        loaders: {css: `${ext}-loader`}, 
-        extractCSS: true
-      })
-      expect(blockfn(mockContext(webpackVer))).toMatchSnapshot()
-    })
-
-    test(`customize ${ext} with extract on webpack ${webpackVer}`, () => {
-      const blockfn = vue({
-        loaders: {[ext]: `${ext}-loader`}, 
-        extractCSS: true
-      })
-      expect(blockfn(mockContext(webpackVer))).toMatchSnapshot()
-    })
-  })
-
-  test(`extract css without loader on webpack ${webpackVer}`, () => {
-    const blockfn = vue({
-      extractCSS: true
-    })
-    expect(blockfn(mockContext(webpackVer))).toMatchSnapshot()
-  })
-
-  test(`include arbitrary options on webpack ${webpackVer}`, () => {
-    const blockfn = vue({
-      esModule: true
-    })
-    expect(blockfn(mockContext(webpackVer))).toMatchSnapshot()
-  })
-})
+test('arbitrary options', () => {
+  expect(vueCfg({
+    foo: 'bar',
+  })).toMatchSnapshot();
+});
