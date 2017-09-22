@@ -4,7 +4,7 @@
  * @see https://github.com/vuejs/vue-loader
  */
 
-const CSS_EXTS = ['css', 'less', 'sass', 'stylus'];
+const CSS_EXTS = ['css', 'scss', 'less', 'sass', 'stylus'];
 
 function preHook(context) {
   const types = context.fileType.all();
