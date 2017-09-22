@@ -3,6 +3,8 @@
 This is the `vue` block providing [Vue.js](vuejs.org) component support. Uses
 [vue-loader](http://vue-loader.vuejs.org/en/).
 
+**THIS PACKAGE IS NO LONGER ACTIVELY MAINTAINED. IF YOU WISH TO TAKE OVER, PLEASE LEAVE A COMMENT IN [THE ISSUES](https://github.com/foxbunny/webpack-blocks-vue/issues/4).**
+
 ## Installation
 
 You can install this package using npm:
